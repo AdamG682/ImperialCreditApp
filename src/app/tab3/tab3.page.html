@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
+  <ion-toolbar class="titleColor">
+    <ion-title class="titleText">
+      Imperial Miner
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,22 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Imperial Miner</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          Account Balance:
+          <ion-select>
+            <ion-select-option value="Imperial Credit">IMC</ion-select-option>
+              <ion-select-option value="Wupiupi">WPI</ion-select-option>
+          </ion-select>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>

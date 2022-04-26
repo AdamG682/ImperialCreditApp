@@ -18,3 +18,22 @@ a{
     color: white;
     text-decoration: none;
 }
+
+.imgResize{
+    width: 100px;
+    height: 150px;
+}
+
+.item-thumbnail-left h2,.item-thumbnail-left p {
+    display: inline-block;
+    width: 33%;
+    vertical-align:top;
+    text-align: left;
+}
+
+.item-thumbnail-left, ion-img{
+    display: inline-block;
+    max-height: 100px !important;
+    width: 77%;
+    vertical-align:top;
+}

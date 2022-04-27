@@ -21,7 +21,11 @@ const routes: Routes = [
   {
     path: 'tutorials-section2',
     loadChildren: () => import('./tutorials-section2/tutorials-section2.module').then( m => m.TutorialsSection2PageModule)
+  },  {
+    path: 'cal-modal',
+    loadChildren: () => import('./cal-modal/cal-modal.module').then( m => m.CalModalPageModule)
   }
+
 
 ];
 @NgModule({

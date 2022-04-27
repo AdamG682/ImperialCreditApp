@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { PhotoService } from '../services/photo.service';
-
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -9,10 +8,25 @@ import { PhotoService } from '../services/photo.service';
 })
 export class Tab2Page {
 
-  constructor(public photoService: PhotoService) {}
+  constructor(private alertCtrl: AlertController)
+  {}
 
-  addPhoto(){
-    this.photoService.addNewPhoto();
+  async showAlert(){
+    this.alertCtrl.create({
+      header: "Requires Premium Subscription",
+      message: "To unlock this lesson, press OK to subscribe for only $1.99.",
+
+      buttons:[
+        {
+          text: "OK"
+        },
+        {
+          text: "CANCEL"
+        }
+      ]
+
+
+    }).then (res => res.present());
   }
 
 }

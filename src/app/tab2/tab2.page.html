@@ -1,45 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title id="headerTitle">
-      Learn More About Digital Currency
+      Learn More About Cryptocurrency
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" style="text-align:center">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>The Dawn of Crypto</ion-card-title>
+            <ion-card-subtitle>Lessons Included: 4</ion-card-subtitle>
+          </ion-card-header>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Lessons Included: 7</ion-card-subtitle>
-    </ion-card-header>
+          <ion-card-content>
+            In this section, users will learn more about the beauty of cryptocurrency
+            and how it all began.
+            <br>
+            This will act as a launching off point to help understand
+            the inner workings of the currency later on.
+          </ion-card-content>
 
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
+          <ion-button color="light" routerLink="/tutorials-section1">
+            <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Lessons Included: 10</ion-card-subtitle>
+          </ion-card-header>
 
-    <ion-button color="light" routerLink="/tutorials-section1">
-      <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
-    </ion-button>
-  </ion-card>
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Lessons Included: 10</ion-card-subtitle>
-    </ion-card-header>
-
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-
-    <ion-button color="light" routerLink="/tutorials-section2">
-      <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
-    </ion-button>
-  </ion-card>
-
+          <ion-button color="light" routerLink="/tutorials-section2">
+            <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   <ion-card>
     <ion-card-header>
@@ -68,8 +76,8 @@
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
 
-    <ion-button color="light">
-      <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
+    <ion-button (click)="showAlert()" color="light">
+      <ion-icon slot="icon-only" name="lock-closed-outline"></ion-icon>
     </ion-button>
   </ion-card>
 
@@ -84,8 +92,24 @@
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
 
-    <ion-button color="light">
-      <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
+    <ion-button (click)="showAlert()" color="light">
+      <ion-icon slot="icon-only" name="lock-closed-outline"></ion-icon>
+    </ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Lessons Included: 13</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+
+    <ion-button (click)="showAlert()" color="light">
+      <ion-icon slot="icon-only" name="lock-closed-outline"></ion-icon>
     </ion-button>
   </ion-card>
 

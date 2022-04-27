@@ -8,7 +8,7 @@ import { UserProfilePageRoutingModule } from './user-profile-routing.module';
 
 import { UserProfilePage } from './user-profile.page';
 import { NgCalendarModule } from 'ionic2-calendar';
-import { Tab1PageModule } from '../tab1/tab1.module';
+import { CalModalPageModule } from '../cal-modal/cal-modal.module';
 
 import { registerLocaleData } from '@angular/common';
 import localeDe from '@angular/common/locales/de';
@@ -22,7 +22,7 @@ registerLocaleData(localeDe);
     IonicModule,
     UserProfilePageRoutingModule,
     NgCalendarModule,
-    Tab1PageModule
+    CalModalPageModule
   ],
   declarations: [UserProfilePage],
   providers: [

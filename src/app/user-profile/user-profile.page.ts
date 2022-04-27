@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { CalendarComponent } from 'ionic2-calendar';
+import { CalModalPage } from '../cal-modal/cal-modal.page';
 
 
 
@@ -108,7 +109,7 @@ selectedDate: Date;
 
   async openCalModal() {
     const modal = await this.modalCtrl.create({
-      component: UserProfilePage,
+      component: CalModalPage,
       cssClass: 'cal-modal',
       backdropDismiss: false
     });

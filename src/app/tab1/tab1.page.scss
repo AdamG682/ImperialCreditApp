@@ -6,6 +6,7 @@ a{
 .imgResize{
     width: 100px;
     height: 150px;
+    padding-right: 15px;
 }
 
 .item-thumbnail-left h2,.item-thumbnail-left p {
@@ -23,6 +24,11 @@ a{
 }
 
 ion-title{
+    text-align:center;
     font-family: 'Teko';
+    font-size: 32px;
+}
+
+div{
     text-align: center;
 }

@@ -2,13 +2,13 @@
 
   <ion-toolbar>
     <ion-breadcrumbs>
-      <ion-breadcrumb routerLink="/tabs/tab1">
+      <ion-breadcrumb id="breadCrumb" routerLink="/tabs/tab1">
         Main Hub
       </ion-breadcrumb>
-      <ion-breadcrumb routerLink="/tabs/tab2">
-        Learn More About Cryptocurrency
+      <ion-breadcrumb id="breadCrumb" routerLink="/tabs/tab2">
+        Learn More About Crypto
       </ion-breadcrumb>
-      <ion-breadcrumb>
+      <ion-breadcrumb id="breadCrumb">
         Episode I: The Crypto Menace
       </ion-breadcrumb>
     </ion-breadcrumbs>
@@ -16,14 +16,16 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true" style="text-align:center">
+<ion-content [fullscreen]="true" id="centerContent" >
 
-  <h1>Episode I: The Crypto Menace</h1>
+  <br>
+
+  <ion-text id="title">Episode I: The Crypto Menace</ion-text>
 
   <!--Iconic Tutorial Card 1-->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>What Is Cryptocurrency?</ion-card-title>
+      <ion-card-title class="subTitle">What Is Cryptocurrency?</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
@@ -138,7 +140,7 @@
   <!--Iconic Tutorial Card 2-->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Why Is Crypto So Popular Today?</ion-card-title>
+      <ion-card-title class="subTitle">Why Is Crypto So Popular Today?</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
@@ -245,7 +247,7 @@
   <!--Iconic Tutorial Card 3-->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Time to Get Started</ion-card-title>
+      <ion-card-title class="subTitle">Time to Get Started</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>

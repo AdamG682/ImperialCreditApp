@@ -31,3 +31,12 @@
     --border-radius: 10px;
     padding: 25px;
 }
+
+@font-face {   
+    font-family: 'Teko';    //This is what we are going to call
+    src: url('../assets/fonts/Teko-Light.ttf');
+    src: url('../assets/fonts/Teko-Regular.ttf');
+    src: url('../assets/fonts/Teko-Medium.ttf');
+    src: url('../assets/fonts/Teko-SemiBold.ttf');
+    src: url('../assets/fonts/Teko-Bold.ttf');
+  }

@@ -1,15 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title id="headerTitle">
+    <ion-title id="title">
       Learn More About Cryptocurrency
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" style="text-align:center">
+<ion-content [fullscreen]="true" id="centerContent">
+
+  <br>
+
+  <ion-text id="infoSection"> 
+    <br>
+    With the purpose of the Imperial Credit Miner app to teach people more about
+    cryptocurrency in a fun and nerdy way. 
+    <br>
+    Here are a variety of tutorials that help teach the basics.
+    <br>
+  </ion-text>
+
+
+  <br>
+
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Episode I: The Crypto Menace</ion-card-title>
+      <ion-card-title class="subTitle">Episode I: The Crypto Menace</ion-card-title>
       <ion-card-subtitle>Lessons Included: 3</ion-card-subtitle>
     </ion-card-header>
 
@@ -28,7 +43,7 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Episode II: Attack of the Investors</ion-card-title>
+      <ion-card-title class="subTitle">Episode II: Attack of the Investors</ion-card-title>
       <ion-card-subtitle>Lessons Included: 5</ion-card-subtitle>
     </ion-card-header>
 
@@ -47,7 +62,7 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Episode III: Revenge of the Currencies</ion-card-title>
+      <ion-card-title class="subTitle">Episode III: Revenge of the Currencies</ion-card-title>
       <ion-card-subtitle>Lessons Included: 3</ion-card-subtitle>
     </ion-card-header>
 
@@ -56,17 +71,17 @@
       and how it all began.
       <br>
       This will act as a launching off point to help understand
-      the inner workings of the currency later on.    
+      the inner workings of the currency later on.
     </ion-card-content>
 
-    <ion-button color="light">
+    <ion-button color="light" routerLink="/tutorials-section3">
       <ion-icon slot="icon-only" name="arrow-forward-circle-outline"></ion-icon>
     </ion-button>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Episode IV: A Day Trader's Hope </ion-card-title>
+      <ion-card-title class="subTitle">Episode IV: A Day Trader's Hope </ion-card-title>
       <ion-card-subtitle>Lessons Included: 8</ion-card-subtitle>
     </ion-card-header>
 
@@ -85,7 +100,7 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Episode V: The Miner Strikes Back </ion-card-title>
+      <ion-card-title class="subTitle">Episode V: The Miner Strikes Back </ion-card-title>
       <ion-card-subtitle>Lessons Included: 4</ion-card-subtitle>
     </ion-card-header>
 
@@ -104,7 +119,7 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Episode VI: Return of the Portfolio</ion-card-title>
+      <ion-card-title class="subTitle">Episode VI: Return of the Portfolio</ion-card-title>
       <ion-card-subtitle>Lessons Included: 6</ion-card-subtitle>
     </ion-card-header>
 
@@ -120,5 +135,17 @@
       <ion-icon slot="icon-only" name="lock-closed-outline"></ion-icon>
     </ion-button>
   </ion-card>
+
+  <br>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="subTitle">More Tutorials Coming Soon</ion-card-title>
+      <ion-card-subtitle>Find updates for the Imperial Credit Miner app on our main website here.</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+
+
 
 </ion-content>

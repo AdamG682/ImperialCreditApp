@@ -24,6 +24,10 @@ const routes: Routes = [
   },  {
     path: 'cal-modal',
     loadChildren: () => import('./cal-modal/cal-modal.module').then( m => m.CalModalPageModule)
+  },
+  {
+    path: 'tutorials-section3',
+    loadChildren: () => import('./tutorials-section3/tutorials-section3.module').then( m => m.TutorialsSection3PageModule)
   }
 
 

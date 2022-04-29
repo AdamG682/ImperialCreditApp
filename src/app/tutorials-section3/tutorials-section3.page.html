@@ -2,13 +2,13 @@
 
   <ion-toolbar>
     <ion-breadcrumbs>
-      <ion-breadcrumb routerLink = "/tabs/tab1">
+      <ion-breadcrumb id="breadCrumb" routerLink = "/tabs/tab1">
         Main Hub
       </ion-breadcrumb>
-      <ion-breadcrumb routerLink = "/tabs/tab2">
+      <ion-breadcrumb id="breadCrumb" routerLink = "/tabs/tab2">
         Learn More About Crypto
       </ion-breadcrumb>
-      <ion-breadcrumb>
+      <ion-breadcrumb id="breadCrumb">
         Episode III: Revenge of the Currencies
       </ion-breadcrumb>
     </ion-breadcrumbs>
@@ -16,21 +16,23 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true" style="text-align:center">
+<ion-content [fullscreen]="true" id="centerContent">
 
-  <h1>Episode III: Revenge of the Currencies</h1>
+  <br>
+
+  <ion-text id="title">Episode III: Revenge of the Currencies</ion-text>
 
     <!--Iconic Tutorial Card 1-->
     <ion-card>
       <ion-card-header>
-        <ion-card-title>What Is Cryptocurrency?</ion-card-title>
+        <ion-card-title class="subTitle">What Is Cryptocurrency?</ion-card-title>
       </ion-card-header>
   
       <ion-card-content>
         <ion-accordion-group>
           <ion-accordion value="introduction">
             <ion-item slot="header">
-              <ion-label>Introduction</ion-label>
+              <ion-label id="accordionTab">Overview</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -61,7 +63,7 @@
           </ion-accordion>
           <ion-accordion value="videos">
             <ion-item slot="header">
-              <ion-label>Video Tutorial</ion-label>
+              <ion-label id="accordionTab">Video Lesson</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -109,7 +111,7 @@
           </ion-accordion>
           <ion-accordion value="recap">
             <ion-item slot="header">
-              <ion-label>Recap</ion-label>
+              <ion-label id="accordionTab">Lesson Recap</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -138,14 +140,14 @@
     <!--Iconic Tutorial Card 2-->
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Why Is Crypto So Popular Today?</ion-card-title>
+        <ion-card-title class="subTitle">Why Is Crypto So Popular Today?</ion-card-title>
       </ion-card-header>
   
       <ion-card-content>
         <ion-accordion-group>
           <ion-accordion value="introduction">
             <ion-item slot="header">
-              <ion-label>Introduction</ion-label>
+              <ion-label id="accordionTab">Overview</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -169,7 +171,7 @@
           </ion-accordion>
           <ion-accordion value="videos">
             <ion-item slot="header">
-              <ion-label>Video Tutorial</ion-label>
+              <ion-label id="accordionTab">Video Lesson</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -216,7 +218,7 @@
           </ion-accordion>
           <ion-accordion value="recap">
             <ion-item slot="header">
-              <ion-label>Recap</ion-label>
+              <ion-label id="accordionTab">Lesson Recap</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -245,14 +247,14 @@
     <!--Iconic Tutorial Card 3-->
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Time to Get Started</ion-card-title>
+        <ion-card-title class="subTitle">Time to Get Started</ion-card-title>
       </ion-card-header>
   
       <ion-card-content>
         <ion-accordion-group>
           <ion-accordion value="introduction">
             <ion-item slot="header">
-              <ion-label>Introduction</ion-label>
+              <ion-label id="accordionTab">Overview</ion-label>
             </ion-item>
   
             <ion-list slot="content">
@@ -283,42 +285,46 @@
           </ion-accordion>
           <ion-accordion value="videos">
             <ion-item slot="header">
-              <ion-label>Video Tutorial</ion-label>
+              <ion-label id="accordionTab">Video Lesson</ion-label>
             </ion-item>
   
             <ion-list slot="content">
               <ion-grid>
                 <ion-row>
-                  <ion-col size="6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                      et
-                      dolore magna aliqua.
-                      Ut pharetra sit amet aliquam id. Sed cras ornare arcu dui vivamus. Odio pellentesque diam volutpat
-                      commodo
-                      sed egestas egestas fringilla.
-                      Id donec ultrices tincidunt arcu non sodales neque. Ut tellus elementum sagittis vitae et leo duis
-                      ut. Id
-                      neque aliquam vestibulum morbi
-                      blandit cursus risus at. Rutrum quisque non tellus orci ac auctor augue mauris augue. Sed faucibus
-                      turpis
-                      in eu mi bibendum neque egestas congue.
-                      Vitae et leo duis ut. Volutpat consequat mauris nunc congue. Amet mauris commodo quis imperdiet.
-                      Faucibus
-                      scelerisque eleifend donec pretium
-                      vulputate sapien nec sagittis aliquam. Dictumst quisque sagittis purus sit amet volutpat consequat
-                      mauris
-                      nunc. Rutrum quisque non tellus orci
-                      ac auctor augue mauris. Amet tellus cras adipiscing enim. At tempor commodo ullamcorper a lacus
-                      vestibulum
-                      sed arcu. Hendrerit dolor magna eget est lorem.
-                      Mauris pellentesque pulvinar pellentesque habitant. Non curabitur gravida arcu ac tortor dignissim
-                      convallis.</p>
+                  <ion-col>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua.
+                        Ut pharetra sit amet aliquam id. Sed cras ornare arcu dui vivamus. Odio pellentesque diam volutpat
+                        commodo
+                        sed egestas egestas fringilla.
+                        Id donec ultrices tincidunt arcu non sodales neque. Ut tellus elementum sagittis vitae et leo duis
+                        ut. Id
+                        neque aliquam vestibulum morbi
+                        blandit cursus risus at. Rutrum quisque non tellus orci ac auctor augue mauris augue. Sed faucibus
+                        turpis
+                        in eu mi bibendum neque egestas congue.
+                        Vitae et leo duis ut. Volutpat consequat mauris nunc congue. Amet mauris commodo quis imperdiet.
+                        Faucibus
+                        scelerisque eleifend donec pretium
+                        vulputate sapien nec sagittis aliquam. Dictumst quisque sagittis purus sit amet volutpat consequat
+                        mauris
+                        nunc. Rutrum quisque non tellus orci
+                        ac auctor augue mauris. Amet tellus cras adipiscing enim. At tempor commodo ullamcorper a lacus
+                        vestibulum
+                        sed arcu. Hendrerit dolor magna eget est lorem.
+                        Mauris pellentesque pulvinar pellentesque habitant. Non curabitur gravida arcu ac tortor dignissim
+                        convallis.</p>
+                    </div>
                   </ion-col>
-                  <ion-col size="6">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GEPcxs5IIJI"
-                      title="YouTube video player" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+                  <ion-col>
+                    <div> 
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/GEPcxs5IIJI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                      </div>
                   </ion-col>
                 </ion-row>
               </ion-grid>
@@ -326,7 +332,7 @@
           </ion-accordion>
           <ion-accordion value="recap">
             <ion-item slot="header">
-              <ion-label>Recap</ion-label>
+              <ion-label id="accordionTab">Lesson Recap</ion-label>
             </ion-item>
   
             <ion-list slot="content">

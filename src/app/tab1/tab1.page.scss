@@ -29,6 +29,25 @@ ion-title{
     font-size: 32px;
 }
 
+.introText{
+    font-size: 1.15em;
+    font-weight: 100;
+    font-style: italic;
+    color: grey;
+    margin: auto;
+}
+
+.containers{
+    background-color: #1a1a1a;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 div{
     text-align: center;
+}
+br{
+    color: gray;
 }
